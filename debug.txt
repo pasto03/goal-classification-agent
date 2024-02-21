@@ -1,0 +1,2 @@
+1. delay for more than one seconds and run two updates successively
+- in components.py, the initial yield and second yield has a delay, just convert to list to skip delay

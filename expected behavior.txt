@@ -1,0 +1,7 @@
+1. When the UI opens, all objects should be static
+2. Only when an objective is entered in textbox and returned, all objects go to initialized place
+3. After "Start" button clicked, simulation starts
+
+How "start" button works:
+- when clicked, reset all count and positions, trigger proceeding simulation step
+- when clicked again at any moment, the same action above will be done again
