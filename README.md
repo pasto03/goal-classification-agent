@@ -3,10 +3,12 @@ Goal classification agent is the combination of text classification model and Re
 
 ## Features
 Simply run _game.py_ and an agent will be initialized as a Pygame GUI.
-<image style="width:50%;height:50%" src="screenshots\interface.png" alt="screenshot">
+
+https://github.com/pasto03/goal-classification-agent/assets/101184462/d0e619d1-e0db-4875-bb2c-70fdcdc8613c
 
 ## Architecture
 The agent combines two models:
+
 ### 1. Objective Classifier(_obj_classifier.py_):
 This model classifies user text input into goal index, combination of seq2seq encoder and output layer
 
@@ -15,7 +17,7 @@ This model utilize PPO algorithm to train and eval policy given observation and 
 
 ## Example Usage
 An example of training custom RL policy:
-```
+```python
 from components import Walk2D_interact
 
 game = Walk2D_interact(size=7, load_ckpt=True)
@@ -25,7 +27,7 @@ game = Walk2D_interact(size=7, load_ckpt=True)
 ```
 
 Fine-tune objective classifier for one specific goal command:
-```
+```python
 from obj_classifier import ObjectiveClassifier
 
 cls = ObjectiveClassifier(load_ckpt=True)
